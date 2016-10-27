@@ -1,0 +1,994 @@
+/* font Xfinity-Sans font */ 
+
+@font-face {
+    font-family: 'Xfinity Sans';
+    src: url('../Xfinity_Sans-Font/xfinity_sans_light_71113.eot');
+    src: url('../Xfinity_Sans-Font/xfinity_sans_light_71113.woff') format('woff'),
+         url('../Xfinity_Sans-Font/xfinity_sans_light_71113.ttf') format('truetype'),
+         url('../Xfinity_Sans-Font/xfinity_sans_light_71113.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Xfinity Sans';
+    src: url('../Xfinity_Sans-Font/xfinity_sans_medium_71113.eot');
+    src: url('../Xfinity_Sans-Font/xfinity_sans_medium_71113.woff') format('woff'),
+         url('../Xfinity_Sans-Font/xfinity_sans_medium_71113.ttf') format('truetype'),
+         url('../Xfinity_Sans-Font/xfinity_sans_medium_71113.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* HTML5 Reset style
+-----------------------------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img,
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+figcaption, figure, footer, header, hgroup, menu, nav, section,
+summary, time, mark, audio, video,p, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html,body{
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Xfinity Sans', Arial;
+    font-size: 6px;
+    font-weight: 300;
+    color: #fff;
+	background-image: url(../i/background.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: rgba(0,0,0,1);
+	overflow-x: hidden;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a, a:active, a:visited {
+	color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Icon */
+.icon {
+	position: relative;
+}
+
+.icon:before {
+	background-image: url(../i/icons.png);
+	background-repeat: no-repeat;
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+/* Filter */
+.icon-filter:before {
+	height: 16px;
+	margin-top: -8px;
+	top: 50%;
+	right: 0;
+	width: 8px;
+}
+	
+.icon-btn-a:before {
+	background-position: -20px 0;
+	height: 30px;
+	margin-top: -15px;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 34px;
+}
+
+.icon-btn-b:before {
+	background-position: -60px 0;
+	height: 28px;
+	margin-top: -14px;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 28px;
+}
+
+.icon-btn-c:before {
+	background-position: -100px 0;
+	height: 30px;
+	margin-top: -15px;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 30px;
+}
+
+.icon-btn-d:before {
+	background-position: -140px 0;
+	height: 30px;
+	margin-top: -15px;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 30px;
+}
+
+/* Button */
+.btn-primary {
+	border: rgba(4,110,181,1) solid 2px;
+	border-radius: 4px;
+	color: rgba(255,255,255,.7);
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 34px;
+	text-align: center;
+}
+
+.btn-default {
+	background-color: rgba(4,110,181,1);
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 38px;
+	text-align: center;
+}
+	
+.btns-group {
+	margin: 0 -5px;
+	padding: 30px 0;
+}
+	
+.btns-group .btn-primary {
+	border-radius: 8px;
+	line-height: 60px;
+	margin: 0 5px;
+	width: 232px;
+}
+	
+.btns-group .btn-default {
+	border-radius: 8px;
+	line-height: 64px;
+	margin: 0 5px;
+	width: 236px;
+}
+
+/* Focus */
+.btn-primary.focus,
+.btn-default.focus {
+	box-shadow: rgba(4,110,181,.77) 0 0 24px 4px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.wrapper {
+	display: none;
+	min-height: 1080px;
+	position: relative;
+	width: 1920px;
+}
+
+.wrapper.active {
+	display: block;
+	animation-duration: .3s;
+  	animation-name: slidein;
+}
+
+.wrapper[data-role="Index"].active {
+	animation-name: none;
+}
+	
+	/* Header */
+	header {
+		background-color: rgba(38,38,38,1);
+		padding-top: 3.5%;
+	}
+	
+		header .safe {
+			margin: 0 10%;
+			position: relative;
+		}
+
+		header h1 {
+			font-size: 60px;
+			font-weight: 300;
+			line-height: 104px;
+			padding-bottom: 2px;
+		}
+		
+		/* Main navigation */		
+		header nav {
+			position: absolute;
+			top: 25px;
+			right: 4px;
+		}
+			
+		header nav strong {
+			float: left;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 72px;
+			margin-right: 32px;
+			padding-right: 32px;
+		}
+			
+		header nav .btn {
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 72px;
+			margin-right: 40px;
+			padding-left: 38px;
+		}
+		
+		header nav li:last-child .btn {
+			margin-right: 0;
+		}
+		
+	/* Main */
+	.main {
+		padding-bottom: 3.5%;
+	}
+	
+	.main h2 {
+		border-bottom: #363636 solid 2px;
+		font-size: 40px;
+		font-weight: 300;
+		line-height: 76px;
+		margin: 0 10%;
+		padding-top: 71px;
+	}
+		
+		/* Gallery */
+		.main .gallery {
+			overflow: hidden;
+			padding: 32px 10% 22px 10%;
+			width: 100%;
+		}
+		
+		.main .gallery ul {
+			display: table;
+			table-layout: fixed;
+			transition: .3s;
+		}
+		
+		.main .gallery li {
+			display: table-cell;
+			vertical-align: top;
+		}
+		
+		/* 2 Rows */
+		.main .gallery .thumb-item {
+			margin-bottom: 10px;
+			margin-right: 15px;
+			position: relative;
+		}
+		
+		.main .gallery .thumb-item > img {
+			display: block;
+			height: 620px;
+			width: 502px;
+		}
+		
+		.main .gallery .row-2 > img {
+			height: 305px;
+		}
+		
+		/* Content */
+		.main .gallery .active:before {
+			background-color: rgba(14,16,19,.87);
+			box-shadow: rgba(4,110,181,.35) 0 0 21px 5px inset, rgba(4,110,181,.77) 0 0 48px 5px;
+			border: #046eb5 solid 2px;
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+			
+		.main .gallery .contest {
+			display: none;
+		}
+			
+		.main .gallery .active .contest {
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+		
+		.main .gallery .table {
+			display: table;
+			height: 100%;
+			width: 100%;
+		}
+		
+		.main .gallery .table-cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.main .gallery .contest img {
+			margin: 10px 0 35px 0;
+		}
+			
+		.main .gallery .row-2 .contest img {
+			margin: 24px 0 25px 0;
+		}
+			
+		.main .gallery .contest p {
+			font-size: 28px;
+			font-weight: 300;
+			line-height: 42px;
+			padding: 0 40px;
+		}
+		
+		.main .gallery [data-target-role="T-mobile"] .contest p {
+			padding: 0 20px;
+		}
+		
+		.main .gallery .contest p .sub {
+			font-size: 15.31px;
+			vertical-align: text-top;
+		}
+		
+		.main .gallery .contest .btn {
+			display: inline-block;
+			margin: 24px 0 24px 0;
+			width: 124px;
+		}
+		
+/* Ford Details Page */	
+.container {
+	padding: 3.5% 10%;
+}
+
+	.content {
+		height: 664px;
+		position: relative;
+	}
+	
+	/* Infor Ads */
+	.container .infor-ads {
+		padding-top: 83px;
+		position: relative;
+		width: 518px;
+	}
+	
+		.container .infor-ads h3 {
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 48px;
+			padding-right: 30px;
+			margin-top: 11px;
+		}
+			
+		.container .infor-ads p {
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 40px;
+			padding: 14px 0;
+			opacity: .7;
+		}
+		
+		.container .infor-ads p > span {
+			display: block;
+		}
+		
+		.container .infor-ads li {
+			background-image: url(../i/dot.png);
+			background-repeat: no-repeat;
+			background-position: 11px 18px;
+			color: rgba(255,255,255,.7);
+			font-size: 24px;
+			line-height: 40px;
+			padding-left: 36px;
+		}
+		
+		.container .infor-ads small {
+			color: rgba(255,255,255,.7);
+			display: block;
+			font-size: 18px;
+			line-height: 30px;
+			margin: 12px 0;
+		}
+		
+	/* AMC */
+	[data-role="AMC"] .container .infor-ads {
+		padding-top: 77px;
+	}
+	
+	[data-role="AMC"] .container .infor-ads p {
+		padding: 0;
+	}
+	
+	[data-role="AMC"] .btns-group {
+		padding-top: 28px;
+	}
+	
+	/* Media Ads */
+	.container .media-ads {
+		height: 664px;
+		overflow: hidden;
+		position: relative;
+		width: 1018px;
+	}
+	
+		.container .media-ads video {
+			background-color: rgba(0,0,0,1);
+			height: 664px;
+			width: 100%;
+			z-index: -100;
+		}
+	
+	/* Close */
+	.links-close {
+		position: absolute;
+		top: 2px;
+		z-index: 10;
+	}
+		
+		.links-close span {
+			color: #046eb5;
+			display: block;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 26px;
+			padding-left: 40px;
+			position: relative;
+		}
+			
+		.links-close span.icon:before {
+			background-position: 0 -40px;
+			height: 25px;
+			margin-top: -12.5px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 25px;
+		}
+		
+		/* Focus */
+		.links-close.focus span {
+			color: #ff0000;
+		}
+			
+		.links-close.focus span.icon:before {
+			background-position: -40px -40px;
+		}
+			
+	/* Favor */
+	.links-favor {
+		position: absolute;
+		top: 100px;
+		right: 64px;
+	}
+		
+		.links-favor:before {
+			background-position: -80px -40px;
+			height: 37px;
+			width: 39px;
+		}
+		
+		.links-favor.on:before {
+			background-position: -140px -40px;
+			}
+		
+	/* Foorer Ads */
+	.footer-ads img {
+		display: block;
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+		
+	.footer-ads.focus img {
+		box-shadow: rgba(4,110,181,.77) 0 0 24px 4px;
+	}
+		
+	/* Actions Bar */
+	.actions-bar {
+		background-color: rgba(27,27,27,1);
+		margin-top: 5px;
+	}
+	
+	[data-role="Ford-Alternative"] .actions-bar {
+		margin: 5px 10% 0 10%;
+		}
+	
+		.actions-bar nav strong {
+			float: left;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 58px;
+			margin-left: 26px;
+			margin-right: 44px;
+			padding-right: 26px;
+		}
+			
+		.actions-bar nav .btn {
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 58px;
+			margin-right: 66px;
+			padding-left: 55px;
+		}
+		
+		.actions-bar nav li:last-child .btn {
+			margin-right: 0;
+		}
+		
+	/* Next Ads */
+	.next-ads {
+		min-width: 620px;
+		position: absolute;
+		bottom: 35px;
+		right: 27px;
+		text-align: left;
+		visibility: hidden;
+	}
+	
+	.next-ads.visible {
+		visibility: visible;
+		}
+	
+		.next-ads h4 {
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 56px;
+		}
+		
+		.next-ads h4 strong {
+			font-weight: bold;
+		}
+			
+		.next-ads > div {
+			background-color: rgba(0,0,0,.8);
+			border-radius: 9px;
+			position: relative;
+			overflow: hidden;
+		}
+			
+		.next-ads > div > img:first-child {
+			border-radius: 9px 0 0 9px;
+			position: absolute;
+		}
+		
+		.next-ads > div > .infor {
+			margin-left: 214px;
+			padding: 18px 84px 16px 0;
+		}
+		
+		.next-ads > div > .infor > img {
+			height: 40px;
+		}
+			
+		.next-ads > div > .infor > p {
+			font-size: 30px;
+			line-height: 42px;
+		}
+		
+/* Ford Alternative */	
+[data-role="Ford-Alternative"] {
+	background-color: rgba(0,0,0,1);
+}
+
+[data-role="Ford-Alternative"] .container {
+	height: auto;
+	padding: 0;
+	padding-bottom: 3.5%;
+	position: relative;
+	text-align: center;
+	}
+	
+	/* Favor */
+	[data-role="Ford-Alternative"] .links-favor {
+		top: 23px;
+		right: 70px;
+		}
+	
+	/* Close */
+	[data-role="Ford-Alternative"] .links-close {
+		left: 10%;
+		margin-top: 3.5%;
+	}
+		
+		[data-role="Ford-Alternative"] .links-close span {
+			color: #fff;
+		}
+			
+		[data-role="Ford-Alternative"] .links-close span.icon:before {
+			background-position: 0 -80px;
+		}
+		
+		/* Focus */
+		[data-role="Ford-Alternative"] .links-close.focus span {
+			color: #ff0000;
+		}
+			
+		[data-role="Ford-Alternative"] .links-close.focus span.icon:before {
+			background-position: -40px -40px;
+		}
+	
+	/* Video */
+	[data-role="Ford-Alternative"] .container .video-ads {
+		background-image: url(../i/background.jpg);
+		background-repeat: no-repeat;
+		background-position: center top;
+		padding: 0 3.5%;
+	}
+	
+		[data-role="Ford-Alternative"] .container .video {
+			background-color: rgba(0,0,0,1);
+			height: 675px;
+			position: relative;
+		}
+	
+		[data-role="Ford-Alternative"] .container video {
+			height: 100%;
+		}
+		
+	/* Ads */
+	[data-role="Ford-Alternative"] .infor-ads {
+		margin: 0 10%;
+		padding-top: 11px;
+		position: relative;
+		text-align: left;
+		width: auto;
+	}
+	
+		[data-role="Ford-Alternative"] .infor-ads .logo {
+			margin-top: 37px;
+		}
+	
+		[data-role="Ford-Alternative"] .full-content {
+			margin-left: 246px;
+			padding-top: 2px;
+		}
+			
+		[data-role="Ford-Alternative"] .infor-ads p {
+			padding: 6px 0;
+		}
+			
+		[data-role="Ford-Alternative"] .btns-group {
+			padding: 4px 0 18px 0;
+		}
+		
+/* Find Out More */
+[data-role="Find-Out-More"] {
+	min-height: 2100px;
+}
+
+[data-role="Find-Out-More"] .container {
+	height: auto;
+	padding: 0;
+	padding-bottom: 3.5%;
+	position: relative;
+	}
+	
+	/* Close */
+	[data-role="Find-Out-More"] .links-close {
+		left: 10%;
+		margin-top: 3.5%;
+	}
+		
+		[data-role="Find-Out-More"] .links-close span {
+			color: #fff;
+		}
+			
+		[data-role="Find-Out-More"] .links-close span.icon:before {
+			background-position: 0 -80px;
+		}
+		
+		/* Focus */
+		[data-role="Find-Out-More"] .links-close.focus span {
+			color: #ff0000;
+		}
+			
+		[data-role="Find-Out-More"] .links-close.focus span.icon:before {
+			background-position: -40px -40px;
+		}	
+		
+	[data-role="Find-Out-More"] .banner-ads img {
+		width: 100%;
+		}
+		
+	/* Infor Ads */
+	[data-role="Find-Out-More"] .infor-ads {
+		border-bottom: rgba(255,255,255,.5) solid 1px;
+		margin: 0 10%;
+		padding: 41px 0 18px 0;
+		width: auto;
+	}	
+		
+		[data-role="Find-Out-More"] .infor-ads h3 {
+			font-size: 48px;
+			padding: 22px 0;
+		}
+			
+		[data-role="Find-Out-More"] .infor-ads span {
+			font-size: 24px;
+			line-height: 34px;
+			margin-right: 40px;
+		}
+		
+		[data-role="Find-Out-More"] .infor-ads p {
+			padding: 11px 0;
+		}
+		
+		/* Icon Level */
+		.icon-level {
+			padding-left: 42px;
+			position: relative;
+		}
+		
+		.icon-level:before {
+			background-position: -40px -80px;
+			height: 24px;
+			margin-top: -12px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 32px;
+		}
+		
+	/* Available & Upcoming */
+	[data-role="Find-Out-More"] .available-upcoming {
+		margin: 0 10%;
+		padding-top: 49px;
+	}
+		
+		[data-role="Find-Out-More"] .available-upcoming h3{
+			font-size: 48px;
+			font-weight: 300;
+			padding: 47px 0;
+		}
+			
+		/* Available Media */
+		[data-role="Find-Out-More"] .available-media-ads {
+			width: 876px;
+		}
+		
+			[data-role="Find-Out-More"] .available-media-ads ul {
+				border-bottom: rgba(255,255,255,.5) solid 1px;
+			}
+				
+			[data-role="Find-Out-More"] .available-media-ads li {
+				border-top: rgba(255,255,255,.5) solid 1px;
+				font-size: 24px;
+				line-height: 70px;
+				padding: 0 22px;
+				position: relative;
+			}
+			
+			[data-role="Find-Out-More"] .available-media-ads li.focus {
+				box-shadow: rgba(4,110,181,.77) 0 0 24px 4px;
+			}
+			
+			[data-role="Find-Out-More"] .available-media-ads li > span {
+				color: rgba(255,255,255,.3);
+				padding-right: 48px;
+			}
+				
+			[data-role="Find-Out-More"] .available-media-ads li > span:before {
+				background-position: -80px -80px;
+				height: 30px;
+				margin-top: -15px;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 30px;
+			}
+				
+		/* Upcoming */
+		[data-role="Find-Out-More"] .upcoming-ads {
+			width: 618px;
+		}
+		
+			[data-role="Find-Out-More"] .upcoming-ads h4 {
+				font-size: 30px;
+				font-weight: 500;
+				padding: 7px 0;
+			}
+		
+			/* Upcoming Section */
+			[data-role="Find-Out-More"] .upcoming-ads .upcoming-section {
+				padding: 8px 0 75px 32px;
+			}
+			
+				[data-role="Find-Out-More"] .upcoming-ads .upcoming-section li {
+					font-size: 24px;
+					line-height: 39px;
+				}
+				
+			/* Available Online */
+			[data-role="Find-Out-More"] .upcoming-ads .available-section {
+				padding: 8px 0 95px 32px;
+			}
+			
+				[data-role="Find-Out-More"] .upcoming-ads .available-section p {
+					font-size: 30px;
+					padding: 3px 0 7px 0;
+				}
+				
+				[data-role="Find-Out-More"] .upcoming-ads .available-section li {
+					font-size: 24px;
+					line-height: 39px;
+				}
+				
+				[data-role="Find-Out-More"] .upcoming-ads .available-section li > strong {
+					font-weight: 500;
+				}
+				
+				.icon-hd {
+					margin: 0 4px 0 16px;
+				}
+				
+				.icon-hd:before {
+					background-position: -120px -80px;
+					display: inline-block;
+					position: relative;
+					height: 16px;
+					width: 23px;
+				}
+					
+				.icon-sd:before {
+					background-position: -150px -80px;
+					display: inline-block;
+					position: relative;
+					height: 16px;
+					width: 23px;
+				}
+					
+/* Detail Subway */
+[data-role="Subway"] .content {
+	height: auto;
+}
+	
+	[data-role="Subway"] .infor-ads {
+		padding-top: 88px;
+	}
+		
+	[data-role="Subway"] .infor-ads h3 {
+		line-height: 38px;
+		margin-top: 29px;
+	}
+	
+	[data-role="Subway"] .infor-ads p {
+		padding: 0;
+	}
+	
+	[data-role="Subway"] .btns-group {
+		padding: 18px 0 24px 0;
+	}
+	
+	/* Code */
+	[data-role="Subway"] .scan-widget {
+		font-size: 18px;
+		line-height: 46px;
+		padding-bottom: 5px;
+	}	
+		
+		[data-role="Subway"] .scan-widget p {
+			font-weight: 500;
+			padding-bottom: 24px;
+		}
+	
+		[data-role="Subway"] .scan-widget > div {
+			margin: 0 18px;
+			text-align: center;
+		}
+		
+		[data-role="Subway"] .scan-widget img {
+			display: block;
+		}
+				
+	/* Slider */
+	[data-role="Subway"] .media-ads {
+		height: auto;
+	}
+	
+	[data-role="Subway"] .media-ads .video {
+		position: relative;
+	}
+	
+	[data-role="Subway"] .media-ads video {
+		height: 617px;
+	}
+	
+		[data-role="Subway"] .media-ads .thumbnails {
+			margin: 0 -3px;
+		}
+		
+		[data-role="Subway"] .media-ads .thumbnails li {
+			-webkit-filter: grayscale(100%);    /* The WebKit kernel supports well */
+			    -moz-filter: grayscale(100%);    /* Other kernel does not support for future compatibility, writing */
+			     -ms-filter: grayscale(100%);
+			      -o-filter: grayscale(100%);
+				     filter: grayscale(100%);    /* Standard */
+		}
+		
+		[data-role="Subway"] .media-ads .thumbnails .focus {
+			-webkit-filter: grayscale(0%);    /* The WebKit kernel supports well */
+			   -moz-filter: grayscale(0%);    /* Other kernel does not support for future compatibility, writing */
+			    -ms-filter: grayscale(0%);
+			     -o-filter: grayscale(0%);
+				    filter: grayscale(0%);    /* Standard */
+		}
+		
+		/* IE Hack */
+		[data-role="Subway"] .media-ads .thumbnails .img_grayscale {
+			position: absolute;
+			z-index: 10;
+			opacity: 0;
+		}
+		
+		[data-role="Subway"] .media-ads .thumbnails .focus img:first-child {
+			opacity: 1;
+		}
+	
+		[data-role="Subway"] .media-ads ul {
+			display: table;
+			padding: 25px 0;
+			width: 100%;
+		}
+		
+			[data-role="Subway"] .media-ads li {
+				display: table-cell;
+				text-align: center;
+			}		
